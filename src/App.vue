@@ -13,6 +13,11 @@
     <!-- User info section -->
     <user-info></user-info>
 
+    <top-bar></top-bar>
+
+    <!-- 路由视图：用于展示基于路由的组件 -->
+    <router-view></router-view>
+
     <!-- Image wall/grid -->
     <div class="image-wall">
       <div class="image-item" v-for="image in images" :key="image.id">
@@ -20,6 +25,7 @@
       </div>
     </div>
 
+    
     <!-- Trial bar -->
     <div class="trial-bar">
       <p>Tap here to unlock 7 days of VSCO Membership for free.</p>
@@ -34,11 +40,13 @@
 <script>
 import UserInfo from './components/UserInfo.vue';
 import BottomNavBar from './components/BottomNavBar.vue'
+import TopBar from './components/TopBar.vue';
 
 export default {
   components: {
     UserInfo,
-    BottomNavBar
+    BottomNavBar,
+    TopBar
   },
   data() {
     return {
