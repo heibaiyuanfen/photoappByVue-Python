@@ -14,6 +14,7 @@
     <user-info></user-info>
 
     <top-bar></top-bar>
+    <test-api></test-api>
 
     <!-- 路由视图：用于展示基于路由的组件 -->
     <router-view></router-view>
@@ -41,12 +42,14 @@
 import UserInfo from './components/UserInfo.vue';
 import BottomNavBar from './components/BottomNavBar.vue'
 import TopBar from './components/TopBar.vue';
+import TestApi from './components/TsetApi.vue';
 
 export default {
   components: {
     UserInfo,
     BottomNavBar,
-    TopBar
+    TopBar,
+    TestApi
   },
   data() {
     return {
